@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="./resources/ol3-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        </style>
+<style>
+.tooltip {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  color: white;
+  padding: 4px 8px;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+.tooltip-measure {
+  opacity: 1;
+  font-weight: bold;
+}
+.tooltip-static {
+  background-color: #ffcc33;
+  color: black;
+  border: 1px solid white;
+}
+.tooltip-measure:before,
+.tooltip-static:before {
+  border-top: 6px solid rgba(0, 0, 0, 0.5);
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  margin-left: -7px;
+  left: 50%;
+}
+.tooltip-static:before {
+  border-top-color: #ffcc33;
+}
+.measure-control {
+  top: 65px;
+  left: .5em;
+}
+.ol-touch .measure-control {
+  top: 80px;
+}
+</style>
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol3-layerswitcher.js"></script>
+        <script src="layers/CURSOSDEAGUAMAIPO_0.js"></script><script src="layers/CUERPOSDEAGUA_1.js"></script><script src="layers/19760315_2.js"></script><script src="layers/19890419_3.js"></script><script src="layers/19950319_4.js"></script><script src="layers/19990226_5.js"></script><script src="layers/20010319_6.js"></script><script src="layers/20040327_7.js"></script><script src="layers/20070320_8.js"></script><script src="layers/20100413_9.js"></script><script src="layers/20110331_10.js"></script><script src="layers/20130421_11.js"></script><script src="layers/20180214_12.js"></script><script src="layers/20190406_13.js"></script><script src="layers/20200204_14.js"></script><script src="layers/CurvasdeNivel_15.js"></script>
+        <script src="styles/CURSOSDEAGUAMAIPO_0_style.js"></script><script src="styles/CUERPOSDEAGUA_1_style.js"></script><script src="styles/19760315_2_style.js"></script><script src="styles/19890419_3_style.js"></script><script src="styles/19950319_4_style.js"></script><script src="styles/19990226_5_style.js"></script><script src="styles/20010319_6_style.js"></script><script src="styles/20040327_7_style.js"></script><script src="styles/20070320_8_style.js"></script><script src="styles/20100413_9_style.js"></script><script src="styles/20110331_10_style.js"></script><script src="styles/20130421_11_style.js"></script><script src="styles/20180214_12_style.js"></script><script src="styles/20190406_13_style.js"></script><script src="styles/20200204_14_style.js"></script><script src="styles/CurvasdeNivel_15_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/qgis2web.js"></script>
+        <script src="./resources/Autolinker.min.js"></script>
+    </body>
+</html>
